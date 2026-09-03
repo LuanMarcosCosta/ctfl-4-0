@@ -4,6 +4,8 @@
  * work well for content-centric websites.
  */
 
+@import './components.css';
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -28,3 +30,37 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Layout adjustments inspired by Cypress docs */
+.navbar {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Make sidebar narrower and fixed-like */
+.theme-doc-sidebar-container {
+  max-width: 260px;
+}
+
+.theme-doc .container {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  gap: 24px;
+}
+
+.theme-doc .theme-doc-markdown {
+  max-width: 760px;
+  margin: 0;
+}
+
+/* Right toc style */
+.theme-doc .theme-doc-sidebar-right {
+  max-width: 280px;
+}
+
+.copy-page-button svg { color: var(--ifm-color-primary); }
+
+/* Navbar search icon styling */
+.navbar__item a[title="Search"] { display: none; }
+.navbar__item a[href="/search"] { font-size: 18px; padding: 6px 10px; }
+
