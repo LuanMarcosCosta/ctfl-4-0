@@ -1,0 +1,61 @@
+---
+title: Particionamento de Equivalência
+description: Exemplo de página criada a partir do template de conceitos
+---
+
+import TipBox from '@site/src/components/TipBox';
+import ExampleBox from '@site/src/components/ExampleBox';
+
+# Particionamento de Equivalência
+
+## 📘 Conceito
+
+Particionamento de equivalência é uma técnica de desenho de testes que divide
+o espaço de entrada em classes (partições) onde os valores são tratados de
+forma equivalente pelo sistema. Selecionando um valor representativo por
+partição reduz o número de casos de teste necessários.
+
+## Resumo Rápido
+
+| Item | Resumo |
+|---|---|
+| Objetivo | Reduzir número de testes selecionando representantes por partições |
+| Quando aplicar | Campos de entrada com grande espaço de valores |
+| Risco | Partições mal definidas podem deixar casos importantes sem teste |
+
+## 💼 Na prática
+
+Use particionamento para campos de formulários (ex.: idade, email, quantidades).
+Combine com análise de valor-limite para cobrir extremidades.
+
+## 🧪 Exemplo
+
+Suponha um campo `idade` esperado entre 18 e 65:
+
+- Partição válida: 18-65 (representante: 30)
+ - Partição inválida 1: `<18` (representante: 15)
+ - Partição inválida 2: `>65` (representante: 80)
+
+```text
+Caso de teste: inserir idade = 15 -> sistema rejeita com mensagem de erro
+```
+
+<ExampleBox>
+  Caso de teste exemplo: inserir 15 no campo `idade`, aguardar mensagem de
+  validação e impedir o envio do formulário.
+</ExampleBox>
+
+## 🎯 Atenção para a prova
+
+- Entenda a diferença entre partição válida e inválida.
+- Combine com valores-limite para alta probabilidade de encontrar defeitos.
+
+## ❓ Exercício
+
+1. Para um campo `quantidade` com valores aceitos 1–100, defina as partições
+   e escolha representantes.
+
+<TipBox title="Dica rápida">
+  Sempre documente as hipóteses tomadas ao definir partições (por exemplo,
+  formatos aceitos, limites inclusivos/exclusivos).
+</TipBox>

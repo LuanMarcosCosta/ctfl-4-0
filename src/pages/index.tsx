@@ -1,44 +1,26 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
+import React, {useEffect} from 'react';
+import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
-import styles from './index.module.css';
+export default function Home(): JSX.Element {
+  const {i18n} = useDocusaurusContext();
+  const {currentLocale, defaultLocale} = i18n;
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const prefix = currentLocale === defaultLocale ? '' : `/${currentLocale}`;
+  const target = `${prefix}/docs/introducao/intro`.replace(/\/\//g, '/');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.location.replace(target);
+    }
+  }, [target]);
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <>
+      <Head>
+        <meta httpEquiv="refresh" content={`0;url=${target}`} />
+      </Head>
+      <div />
+    </>
   );
 }
