@@ -4,7 +4,7 @@ import SearchBar from '@site/src/components/SearchBar';
 
 export default function SearchPage() {
   return (
-    <Layout title="Pesquisar" description="Pesquisar na documentação">
+    <Layout>
       <main style={{padding: '2rem 0'}}>
         <div className="container">
           <h1>Pesquisar</h1>

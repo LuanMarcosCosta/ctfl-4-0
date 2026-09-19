@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CopyPageButton(): JSX.Element {
+export default function CopyPageButton(): React.ReactElement {
   const copy = async () => {
     try {
       const title = document.querySelector('h1')?.textContent || document.title;
