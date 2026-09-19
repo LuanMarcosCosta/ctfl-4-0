@@ -1,147 +1,267 @@
 [
   {
-    "title": "Template de Conceito (Defeitos)",
-    "url": "/docs/defeitos/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "boas-praticas",
+    "url": "/docs/api/boas-praticas",
+    "text": "Boas práticas de API O que é? Práticas para tornar testes de API claros, confiáveis e úteis para o time. Como usar? Versione contratos, controle dados, cubra erros relevantes e mantenha asserções específicas. Exemplo Após criar um recurso de teste, removê lo ao fim do cenário para evitar interferência futura. Pontos de atenção Evite validar apenas código HTTP sem verificar o corpo e os efeitos da operação. Conceitos relacionados Referências Documentação da API do produto"
   },
   {
-    "title": "Defeitos",
-    "url": "/docs/defeitos/intro",
-    "text": "Placeholder para a seção de Defeitos."
+    "title": "conceitos",
+    "url": "/docs/api/conceitos",
+    "text": "Conceitos de API O que é? Conjunto de noções para entender endpoints, requisições, respostas, contratos e autenticação. Para que serve? Cria uma linguagem comum para testar a comunicação entre sistemas. Como usar? Documente entradas, saídas, códigos de resposta, regras e dependências de cada operação. Exemplo Um recebe itens e retorna o identificador do pedido criado. Pontos de atenção Contrato não é apenas o formato do JSON: inclui comportamento e erros esperados. Conceitos relacionados Referências Documentação da API do produto"
   },
   {
-    "title": "Template de Conceito (Exercícios)",
-    "url": "/docs/exercicios/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "introducao",
+    "url": "/docs/api/introducao",
+    "text": "API Testing O que é? Testes aplicados a interfaces de programação e suas integrações. Como usar? Valide contratos, regras, respostas de erro e efeitos nos sistemas integrados. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Exercícios",
-    "url": "/docs/exercicios/intro",
-    "text": "Placeholder para a seção de Exercícios."
+    "title": "testes-de-api",
+    "url": "/docs/api/testes-de-api",
+    "text": "Testes de API O que é? Verificações de comportamento, contrato e integração de uma API. Para que serve? Identifica problemas em regras de serviço antes ou independentemente da interface visual. Como usar? Teste respostas válidas e inválidas, autorização, validações, contratos e efeitos persistidos. Exemplo Enviar um pedido sem item e verificar a resposta de validação esperada. Pontos de atenção Não dependa de dados compartilhados ou estado deixado por outros testes. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Template de Conceito (Ferramentas)",
-    "url": "/docs/ferramentas/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "boas-praticas",
+    "url": "/docs/automacao/boas-praticas",
+    "text": "Boas práticas de automação O que é? Práticas para tornar testes automatizados confiáveis, legíveis e sustentáveis. Como usar? Mantenha testes independentes, dados controlados, seletores estáveis e relatórios úteis. Exemplo Usar atributos de teste em vez de seletores visuais frágeis para localizar elementos da tela. Pontos de atenção Trate testes instáveis como defeitos da suíte, não como ruído aceitável. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Ferramentas",
-    "url": "/docs/ferramentas/intro",
-    "text": "Placeholder para a seção de Ferramentas."
+    "title": "cypress",
+    "url": "/docs/automacao/cypress",
+    "text": "Cypress O que é? Ferramenta para automação de testes de aplicações web, com foco em execução no navegador. Para que serve? Automatiza verificações de interface e fluxos web durante o desenvolvimento e integração contínua. Como usar? Crie testes determinísticos, use comandos legíveis e execute a suíte no CI. Exemplo Validar que um usuário autenticado consegue adicionar um produto ao carrinho. Pontos de atenção Avalie compatibilidade, paralelismo e requisitos do projeto antes da adoção. Conceitos relacionados Referências Documentação oficial do Cypress"
   },
   {
-    "title": "Template de Conceito (Fundamentos)",
-    "url": "/docs/fundamentos/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "introducao",
+    "url": "/docs/automacao/introducao",
+    "text": "Automação de testes O que é? Uso de ferramentas e código para executar verificações de forma repetível. Como usar? Automatize testes com retorno frequente e mantenha os integrados ao fluxo de entrega. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Fundamentos dos Testes",
-    "url": "/docs/fundamentos/intro",
-    "text": "Este documento resume os pontos centrais do Capítulo 1 (Fundamentos dos Testes) do Syllabus ISTQB CTFL 4.0. O objetivo é dar uma visão clara dos conceitos, com exemplos e um exercício prático para aplicar os conceitos. 📘 Conceito Testes de software são atividades destinadas a avaliar a qualidade de um produto de software e identificar diferenças entre o comportamento atual e o comportamento esperado. Testar é um processo sistemático que envolve planejar, implementar e executar casos de teste, além de avaliar os resultados. Princípios fundamentais (resumido): Testes mostram a presença de defeitos, não sua ausência. Mesmo testes extensivos não garantem software sem falhas. Testes exaustivos são impossíveis para programas não triviais; portanto deve se priorizar risco e cobertura. Testes cedo e frequente reduzem custo de correção (encontrar defeitos o mais cedo possível é mais barato). A psicologia humana afeta testes: combinações de técnicas e perspectivas diferentes aumentam a chance de encontrar defeitos. Termos chave: caso de teste, critério de aceitação, cenário, condição de teste, cobertura, defeito (bug), verificação vs validação. 💼 Na prática Como aplicar estes conceitos em um projeto real: Planejamento: identifique objetivos de teste, escopo, riscos e prioridades. Seleção de técnicas: use técnicas de caixa preta (particionamento, valores de fronteira) e caixa branca (caminhos, cobertura) conforme apropriado. Priorização: priorize testes que tratem áreas de maior risco e impacto para o negócio. Integração com SDLC: incorpore testes desde requisitos (revisões) até testes de aceitação; automatize regressões sempre que possível. Exemplo de checklist rápido de atividades de um sprint: 1. Revisão de requisitos e identificação de condições de teste. 2. Definição de casos de teste para funcionalidades críticas. 3. Execução de smoke tests e testes exploratórios. 4. Registro e triagem de defeitos; regressão após correção. 🧪 Exemplo (Fluxo de Login) Contexto: aplicaçã"
+    "title": "piramide-de-testes",
+    "url": "/docs/automacao/piramide-de-testes",
+    "text": "Pirâmide de testes O que é? Modelo que incentiva mais testes rápidos e isolados na base e menos testes amplos na interface. Para que serve? Equilibra velocidade, confiança e custo de manutenção da suíte automatizada. Como usar? Priorize testes de unidade e integração; reserve testes end to end para jornadas essenciais. Exemplo Validar regras de preço em unidade, contrato de estoque em integração e compra completa em end to end. Pontos de atenção É uma orientação, não uma proporção fixa aplicável a todo produto. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Template de Conceito (Gerenciamento de Testes)",
-    "url": "/docs/gerenciamento-de-testes/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "playwright",
+    "url": "/docs/automacao/playwright",
+    "text": "Playwright O que é? Ferramenta para automação de navegadores e testes end to end de aplicações web. Para que serve? Permite validar jornadas de usuário em múltiplos navegadores e integrar resultados ao CI. Como usar? Escreva testes independentes, controle dados e use locators acessíveis e estáveis. Exemplo Executar a jornada de checkout nos navegadores suportados antes de publicar uma versão. Pontos de atenção Testes de interface exigem atenção a ambiente, dados e sincronização. Conceitos relacionados Referências Documentação oficial do Playwright"
   },
   {
-    "title": "Gerenciamento de Testes",
-    "url": "/docs/gerenciamento-de-testes/intro",
-    "text": "Placeholder para a seção de Gerenciamento de Testes."
+    "title": "quando-automatizar",
+    "url": "/docs/automacao/quando-automatizar",
+    "text": "Quando automatizar O que é? Decisão de aplicar automação a um teste ou atividade de verificação. Para que serve? Direciona investimento para cenários que ganham repetibilidade, velocidade ou confiabilidade. Como usar? Considere frequência, estabilidade, custo de manutenção, risco e valor do feedback. Exemplo Automatizar o fluxo crítico de login executado a cada pull request. Pontos de atenção Não automatize um processo instável sem considerar sua manutenção. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Template de Conceito (Glossário)",
-    "url": "/docs/glossario/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "introducao",
+    "url": "/docs/ci-cd/introducao",
+    "text": "CI/CD O que é? Práticas de integração e entrega contínuas que automatizam validação e disponibilização de mudanças. Como usar? Inclua verificações de qualidade no pipeline e dê feedback rápido a cada mudança. Conceitos relacionados Referências Boas práticas de engenharia de software"
   },
   {
-    "title": "Glossário",
-    "url": "/docs/glossario/intro",
-    "text": "Placeholder para o Glossário."
+    "title": "quality-gates",
+    "url": "/docs/ci-cd/quality-gates",
+    "text": "Quality gates no CI/CD O que é? Regras do pipeline que impedem a progressão de uma mudança quando critérios de qualidade não são atendidos. Para que serve? Padroniza controles de qualidade e reduz o risco de liberar mudanças sem validação mínima. Como usar? Associe gates a estágios do pipeline e configure ações claras para falhas. Exemplo O deploy para produção exige testes críticos aprovados e nenhuma vulnerabilidade crítica aberta. Pontos de atenção Evite gates que bloqueiam sem oferecer diagnóstico acionável. Conceitos relacionados Referências Boas práticas de integração contínua"
+  },
+  {
+    "title": "testes-no-ci",
+    "url": "/docs/ci-cd/testes-no-ci",
+    "text": "Testes no CI O que é? Execução automatizada de testes como parte da integração contínua. Para que serve? Oferece feedback rápido sobre o impacto de uma mudança antes da integração ou entrega. Como usar? Execute testes rápidos a cada mudança e distribua testes mais demorados em etapas adequadas. Exemplo Em cada pull request, executar lint, testes unitários, integração e análise estática. Pontos de atenção Pipelines lentos ou instáveis deixam de ser usados como fonte confiável de feedback. Conceitos relacionados Referências Boas práticas de integração contínua"
+  },
+  {
+    "title": "introducao",
+    "url": "/docs/ciclo-de-vida/introducao",
+    "text": "Ciclo de vida O que é? Visão de como as atividades de teste se integram ao desenvolvimento do produto. Como usar? Use esta seção para planejar testes de acordo com o modelo de entrega adotado. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "modelos-de-desenvolvimento",
+    "url": "/docs/ciclo-de-vida/modelos-de-desenvolvimento",
+    "text": "Modelos de desenvolvimento O que é? Formas de organizar o trabalho de desenvolvimento, como sequencial, iterativo e ágil. Para que serve? Define cadência, feedbacks e pontos de integração do teste. Quando usar? Ao planejar a qualidade de uma iniciativa ou adaptar o processo do time. Como usar? Ajuste o planejamento de testes ao fluxo de requisitos, desenvolvimento e entrega escolhido. Exemplo Em sprints, critérios de aceite são refinados antes da implementação e validados durante a sprint. Pontos de atenção Não há modelo único adequado para todos os produtos. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "niveis-de-teste",
+    "url": "/docs/ciclo-de-vida/niveis-de-teste",
+    "text": "Níveis de teste O que é? Camadas de teste com objetivos distintos, como componente, integração, sistema e aceitação. Para que serve? Organiza a verificação do produto e define responsabilidades e ambientes adequados. Como usar? Defina o objetivo, escopo e critérios de cada nível conforme os riscos do produto. Exemplo Um teste de integração verifica se o pedido criado no e commerce é enviado corretamente ao serviço de estoque. Pontos de atenção Os níveis podem se sobrepor conforme o contexto. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "teste-no-ciclo-de-desenvolvimento",
+    "url": "/docs/ciclo-de-vida/teste-no-ciclo-de-desenvolvimento",
+    "text": "Teste no ciclo de desenvolvimento O que é? Integração das atividades de qualidade e teste às etapas de construção do software. Para que serve? Antecipar feedback e corrigir problemas quando o custo tende a ser menor. Como usar? Inclua revisão, testes e critérios de qualidade desde os requisitos até a entrega. Exemplo Uma história recebe critérios de aceite, revisão de código e testes automatizados antes do deploy. Pontos de atenção O teste deve acompanhar mudanças, não ocorrer apenas no fim. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "automacao",
+    "url": "/docs/ferramentas/automacao",
+    "text": "Ferramentas de automação O que é? Ferramentas usadas para automatizar testes, execução de pipelines e geração de evidências. Para que serve? Reduz trabalho repetitivo e torna feedbacks de qualidade mais rápidos. Como usar? Selecione ferramentas pelo tipo de sistema, linguagem, integração e capacidade de manutenção do time. Exemplo Usar Playwright para testes web e um pipeline de CI para executá los em cada pull request. Pontos de atenção A escolha deve considerar custo de manutenção, não apenas facilidade inicial. Conceitos relacionados Referências Documentação das ferramentas adotadas"
+  },
+  {
+    "title": "bug-tracking",
+    "url": "/docs/ferramentas/bug-tracking",
+    "text": "Bug tracking O que é? Ferramentas para registrar e acompanhar defeitos ao longo de seu ciclo de vida. Para que serve? Centraliza comunicação, priorização e histórico de resolução dos problemas. Como usar? Padronize campos, estados e integrações com planejamento e desenvolvimento. Exemplo Criar um ticket com passos de reprodução, evidência e vínculo à história afetada. Pontos de atenção Evite usar status ambíguos que dificultam entender a situação real. Conceitos relacionados Referências Documentação da ferramenta adotada"
+  },
+  {
+    "title": "introducao",
+    "url": "/docs/ferramentas/introducao",
+    "text": "Ferramentas O que é? Categorias de ferramentas que apoiam planejamento, registro de defeitos e automação. Como usar? Escolha ferramentas compatíveis com o processo, a equipe e as integrações necessárias. Conceitos relacionados Referências Boas práticas de engenharia de software"
+  },
+  {
+    "title": "test-management",
+    "url": "/docs/ferramentas/test-management",
+    "text": "Gestão de testes O que é? Ferramentas para organizar requisitos, casos, execuções, evidências e relatórios de teste. Para que serve? Melhora a rastreabilidade e a visibilidade do trabalho de qualidade. Como usar? Modele apenas os campos e fluxos necessários para o processo do time. Exemplo Vincular um caso de teste ao requisito, à execução da release e ao defeito encontrado. Pontos de atenção A ferramenta deve apoiar o processo, não criar burocracia desnecessária. Conceitos relacionados Referências Documentação da ferramenta adotada"
+  },
+  {
+    "title": "erro-defeito-falha",
+    "url": "/docs/fundamentos/erro-defeito-falha",
+    "text": "Erro, defeito e falha O que é? Erro é uma ação humana equivocada; defeito é uma imperfeição no artefato; falha é o comportamento incorreto observado em execução. Para que serve? Ajuda a comunicar problemas com precisão e investigar suas causas. Quando usar? Ao registrar incidentes, revisar código ou analisar causa raiz. Como usar? Descreva a falha observada, identifique o defeito que a provocou e investigue fatores que levaram ao erro. Exemplo Um desenvolvedor usa a taxa errada (erro), o código é salvo assim (defeito) e o total do pedido fica incorreto (falha). Pontos de atenção Uma falha pode ter mais de uma causa. Nem todo defeito se manifesta em todas as condições. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "introducao",
+    "url": "/docs/fundamentos/introducao",
+    "text": "Fundamentos O que é? Ponto de partida para compreender qualidade e testes de software. Como usar? Comece pelos conceitos desta seção antes de avançar para técnicas e gestão. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "principios-de-teste",
+    "url": "/docs/fundamentos/principios-de-teste",
+    "text": "Princípios de teste O que é? Princípios são orientações gerais para planejar e executar testes de forma eficaz. Para que serve? Evita expectativas irreais e direciona esforço para os maiores riscos. Como usar? Use os princípios para combinar técnicas, começar cedo e revisar a estratégia conforme o contexto. Exemplo Em vez de testar todas as combinações possíveis, selecione casos representativos e de maior risco. Pontos de atenção A abordagem deve ser adaptada ao contexto. Ausência de defeitos encontrados não significa produto adequado ao uso. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "qualidade-de-software",
+    "url": "/docs/fundamentos/qualidade-de-software",
+    "text": "Qualidade de software O que é? Grau em que um produto atende requisitos e necessidades de seus usuários e partes interessadas. Para que serve? Orienta decisões para entregar software confiável, útil e sustentável. Quando usar? Durante todo o ciclo de desenvolvimento, desde a definição de requisitos. Como usar? Defina atributos de qualidade, critérios verificáveis e acompanhe evidências de atendimento. Exemplo Uma tela de pagamento deve processar transações corretamente e responder em tempo aceitável. Pontos de atenção Qualidade não é responsabilidade exclusiva de quem testa. Requisitos não funcionais também precisam ser verificáveis. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "teste-de-software",
+    "url": "/docs/fundamentos/teste-de-software",
+    "text": "Teste de software O que é? Atividade de avaliar um produto para encontrar problemas e gerar informações sobre sua qualidade. Para que serve? Reduz riscos e apoia decisões sobre a liberação do software. Quando usar? Desde a revisão de requisitos até a validação após mudanças. Como usar? Defina um objetivo, prepare condições de teste, execute, compare o resultado e comunique evidências. Exemplo Validar se um usuário consegue concluir uma compra com cartão aprovado. Pontos de atenção Testar não prova a ausência de defeitos. Priorize riscos relevantes ao produto. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "criterios-de-entrada-e-saida",
+    "url": "/docs/gerenciamento/criterios-de-entrada-e-saida",
+    "text": "Critérios de entrada e saída O que é? Condições acordadas para iniciar ou encerrar uma atividade de teste. Para que serve? Evita iniciar testes sem condições mínimas e apoia decisões transparentes de liberação. Como usar? Defina critérios objetivos, verificáveis e proporcionais ao risco. Exemplo Entrada: ambiente disponível e história com critérios de aceite. Saída: testes críticos aprovados e riscos comunicados. Pontos de atenção Critérios de saída não eliminam a necessidade de decisão consciente sobre riscos. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "estrategia-de-teste",
+    "url": "/docs/gerenciamento/estrategia-de-teste",
+    "text": "Estratégia de teste O que é? Abordagem de alto nível que orienta como o produto será testado. Para que serve? Alinha objetivos, riscos, tipos de teste, responsabilidades e investimentos. Como usar? Baseie a estratégia nos riscos do produto e revise a quando o contexto mudar. Exemplo Para um pagamento, priorizar segurança, integração, regressão automatizada e monitoramento pós release. Pontos de atenção Estratégia deve ser prática e adequada ao contexto, não um documento genérico. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "gerenciamento-de-defeitos",
+    "url": "/docs/gerenciamento/gerenciamento-de-defeitos",
+    "text": "Gerenciamento de defeitos O que é? Processo de registrar, classificar, acompanhar e encerrar problemas encontrados no produto. Para que serve? Garante rastreabilidade e uma comunicação clara sobre impacto e resolução. Como usar? Registre contexto, passos para reproduzir, resultado esperado, resultado atual, evidências e severidade. Exemplo Um defeito de checkout inclui pedido de teste, navegador, logs e impacto na finalização da compra. Pontos de atenção Diferencie severidade do impacto e prioridade de correção. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "introducao",
+    "url": "/docs/gerenciamento/introducao",
+    "text": "Gerenciamento de testes O que é? Práticas para planejar, acompanhar, controlar e comunicar o trabalho de teste. Como usar? Use esta seção para estabelecer objetivos, critérios, riscos e informações de acompanhamento. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "metricas-de-teste",
+    "url": "/docs/gerenciamento/metricas-de-teste",
+    "text": "Métricas de teste O que é? Medidas usadas para acompanhar o trabalho de teste e apoiar decisões. Para que serve? Ajuda a entender progresso, riscos, eficácia e tendências. Como usar? Escolha métricas que respondam a uma decisão real e interprete as com contexto. Exemplo Acompanhar defeitos críticos abertos por versão para apoiar uma decisão de release. Pontos de atenção Não use métricas isoladas para avaliar pessoas ou qualidade total. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "plano-de-teste",
+    "url": "/docs/gerenciamento/plano-de-teste",
+    "text": "Plano de teste O que é? Documento ou registro que detalha o planejamento do teste para um escopo definido. Para que serve? Torna visíveis objetivo, escopo, riscos, cronograma, recursos e critérios. Como usar? Mantenha um plano proporcional ao tamanho e criticidade da iniciativa. Exemplo Para uma release, registrar funcionalidades incluídas, ambientes, responsáveis e critérios de saída. Pontos de atenção Atualize o plano conforme surgirem riscos ou mudanças de escopo. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "glossario",
+    "url": "/docs/glossario",
+    "text": "Glossário Como usar? Consulte esta página para uma definição rápida dos termos usados na Knowledge Base. As definições serão ampliadas gradualmente. | Termo | Definição inicial | | | | | QA | Sigla para Quality Assurance. | | Quality Assurance | Práticas para promover qualidade no processo e no produto. | | Quality Engineering | Disciplina que integra qualidade à engenharia de software. | | Teste | Atividade de avaliar um produto e gerar informações sobre sua qualidade. | | Erro | Ação humana que pode introduzir um defeito. | | Defeito | Imperfeição em um artefato que pode causar uma falha. | | Falha | Comportamento incorreto observado durante a execução. | | Caso de teste | Conjunto de condições, ações e resultados esperados para uma verificação. | | Cenário de teste | Situação de uso ou comportamento a ser avaliado. | | Teste de regressão | Teste para identificar efeitos indesejados de mudanças. | | Automação | Uso de ferramentas e código para executar verificações repetíveis. | | Smoke Test | Verificação rápida de funcionalidades essenciais. | | Sanity Test | Verificação focada em confirmar que uma mudança específica está utilizável. | | Teste exploratório | Abordagem que combina aprendizado, desenho e execução de testes. | | Particionamento de equivalência | Técnica que seleciona representantes de classes de entrada equivalentes. | | Valor limite | Valor na fronteira de uma faixa ou regra de negócio. | Conceitos relacionados Referências ISTQB CTFL"
   },
   {
     "title": "intro",
     "url": "/docs/intro",
-    "text": "Tutorial Intro Let's discover Docusaurus in less than 5 minutes . Getting Started Get started by creating a new site . Or try Docusaurus immediately with . What you'll need version 20.0 or above: When installing Node.js, you are recommended to check all checkboxes related to dependencies. Generate a new site Generate a new Docusaurus site using the classic template . The classic template will automatically be added to your project after you run the command: You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor. The command also installs all necessary dependencies you need to run Docusaurus. Start your site Run the development server: The command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there. The command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/. Open (this page) and edit some lines: the site reloads automatically and displays your changes."
+    "text": "Software Quality Knowledge Base Objetivo Base de conhecimento prática sobre qualidade de software, testes, automação e práticas de engenharia. A estrutura usa a ISTQB CTFL como referência conceitual, sem se limitar a ela. Conteúdo Os artigos apoiam a consulta rápida no dia a dia: fundamentos, técnicas, gestão, automação, APIs, qualidade de código e CI/CD. Como navegar Utilize o menu lateral para explorar as categorias. Para iniciar, consulte Fundamentos ou leia a Visão geral do projeto. Keywords"
   },
   {
-    "title": "Introdução",
-    "url": "/docs/introducao/intro",
-    "text": "Bem vindo ao CTFL 4.0 — Guia Prático de Estudos. Este é um material independente e não oficial, criado para estudo pessoal e compartilhamento entre profissionais de QA. Conteúdo será adicionado posteriormente."
+    "title": "como-contribuir",
+    "url": "/docs/introducao/como-contribuir",
+    "text": "Como contribuir Objetivo Orientar como novos artigos devem ser escritos e publicados nesta wiki. Regras 1. Todo artigo deve ser escrito em . 1. Apenas artigos relevantes para o dia a dia do time de QA devem ser disponibilizados nesta wiki. 1. Todo artigo deve conter uma seção Objetivo . 1. Os artigos devem seguir a estrutura de categorias existente. Caso necessário, uma nova categoria poderá ser criada. 1. Todo artigo deve ter uma seção de keywords para facilitar a busca por conteúdo. 1. O nome dos arquivos deve ser escrito em minúsculo e separado por . 1. Atenção à LGPD: os artigos não devem conter dados pessoais de clientes ou usuários. Fluxo de publicação 1. Crie uma nova branch com o prefixo da categoria do artigo seguido de uma breve descrição. Exemplo: . 1. Ao concluir a escrita do artigo, abra um pull request para a branch principal. 1. O pull request deve ter ao menos duas aprovações. 1. Durante o review, verifique se os padrões de escrita estão sendo observados. 1. As imagens utilizadas devem ser otimizadas para não comprometer o carregamento das páginas. Keywords"
   },
   {
-    "title": "Template de Conceito (SDLC)",
-    "url": "/docs/sdlc/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO Use este arquivo como base para criar páginas de conceito no capítulo SDLC. 📘 Conceito _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "visao-geral",
+    "url": "/docs/introducao/visao-geral",
+    "text": "Visão geral Objetivo Apresentar o propósito da Wiki QA e como ela se organiza. O que é a Wiki QA A Wiki QA é a base de conhecimento e documentação do time de Quality Assurance. Ela concentra artigos sobre processos de teste, automação, ferramentas e boas práticas adotadas pelo time. Estrutura Os conteúdos são organizados em categorias temáticas. Cada categoria agrupa artigos relacionados a um assunto específico, facilitando a busca e a navegação. Público alvo Esta wiki é destinada a todos os membros do time de QA e demais colaboradores interessados em entender ou aplicar as práticas de qualidade utilizadas no dia a dia dos projetos. Keywords"
   },
   {
-    "title": "Testes ao Longo do SDLC",
-    "url": "/docs/sdlc/intro",
-    "text": "Placeholder para a seção de Testes ao Longo do SDLC."
+    "title": "code-review",
+    "url": "/docs/qualidade-de-codigo/code-review",
+    "text": "Code review O que é? Revisão colaborativa de mudanças de código antes de sua integração. Para que serve? Encontra problemas cedo, dissemina conhecimento e melhora a manutenibilidade. Como usar? Revise mudanças pequenas, use critérios claros e trate comentários como colaboração técnica. Exemplo Antes do merge, verificar se a alteração inclui testes, tratamento de erro e nomes compreensíveis. Pontos de atenção Revisão não substitui execução de testes automatizados. Conceitos relacionados Referências Boas práticas de engenharia de software"
   },
   {
-    "title": "Técnicas de Teste",
-    "url": "/docs/tecnicas-de-teste/intro",
-    "text": "Placeholder para a seção de Técnicas de Teste."
+    "title": "introducao",
+    "url": "/docs/qualidade-de-codigo/introducao",
+    "text": "Qualidade de código O que é? Práticas que mantêm o código compreensível, seguro, testável e sustentável. Como usar? Combine revisão, análise estática e critérios automatizados no fluxo de desenvolvimento. Conceitos relacionados Referências Boas práticas de engenharia de software"
   },
   {
-    "title": "Particionamento de Equivalência",
-    "url": "/docs/tecnicas-de-teste/particionamento",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; Particionamento de Equivalência 📘 Conceito Particionamento de equivalência é uma técnica de desenho de testes que divide o espaço de entrada em classes (partições) onde os valores são tratados de forma equivalente pelo sistema. Selecionando um valor representativo por partição reduz o número de casos de teste necessários. Resumo Rápido | Item | Resumo | | | | | Objetivo | Reduzir número de testes selecionando representantes por partições | | Quando aplicar | Campos de entrada com grande espaço de valores | | Risco | Partições mal definidas podem deixar casos importantes sem teste | 💼 Na prática Use particionamento para campos de formulários (ex.: idade, email, quantidades). Combine com análise de valor limite para cobrir extremidades. 🧪 Exemplo Suponha um campo esperado entre 18 e 65: Partição válida: 18 65 (representante: 30) Partição inválida 1: (representante: 15) Partição inválida 2: (representante: 80) <ExampleBox Caso de teste exemplo: inserir 15 no campo , aguardar mensagem de validação e impedir o envio do formulário. </ExampleBox 🎯 Atenção para a prova Entenda a diferença entre partição válida e inválida. Combine com valores limite para alta probabilidade de encontrar defeitos. ❓ Exercício 1. Para um campo com valores aceitos 1–100, defina as partições e escolha representantes. <TipBox title=\"Dica rápida\" Sempre documente as hipóteses tomadas ao definir partições (por exemplo, formatos aceitos, limites inclusivos/exclusivos). </TipBox"
+    "title": "quality-gates",
+    "url": "/docs/qualidade-de-codigo/quality-gates",
+    "text": "Quality gates O que é? Conjunto de condições automatizadas que uma mudança deve atender para avançar no fluxo de entrega. Para que serve? Evita integrar ou publicar alterações que não cumprem padrões mínimos de qualidade. Como usar? Defina verificações relevantes, como testes aprovados, análise estática e ausência de vulnerabilidades críticas. Exemplo Bloquear o merge quando testes falham ou uma vulnerabilidade de severidade alta é encontrada. Pontos de atenção Gates precisam ser rápidos, confiáveis e alinhados ao risco. Conceitos relacionados Referências Boas práticas de integração contínua"
   },
   {
-    "title": "TÍTULO DO CONCEITO",
-    "url": "/docs/templates/concept-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; {/ Template de página para conceitos do CTFL 4.0. Copie este arquivo para a pasta do capítulo correspondente e edite o frontmatter. Exemplo: docs/tecnicas de teste/particionamento.mdx /} TÍTULO DO CONCEITO 📘 Conceito Explique o conceito aqui em linguagem clara e objetiva. Cite definição, termos relacionados e por que o conceito é importante. 💼 Na prática Descreva como esse conceito aparece em projetos reais: quando aplicá lo, quais artefatos ele impacta e exemplos de atividades relacionadas. Resumo Rápido | Item | Resumo | | | | | Objetivo | Descrever brevemente o propósito do conceito | | Quando aplicar | Situações típicas onde o conceito é relevante | | Risco | Principais riscos relacionados | 🧪 Exemplo Forneça um exemplo prático. Pode ser um cenário curto, um pseudocódigo ou um trecho de caso de teste. <ExampleBox Exemplo compacto dentro de um componente estilizado. </ExampleBox 🎯 Atenção para a prova Destaque os pontos que costumam aparecer em exames: termos que devem ser lembrados, diferenças conceituais importantes e armadilhas comuns. ❓ Exercício Proponha 1–3 exercícios práticos para consolidar o aprendizado. Exemplo: 1. Liste 4 condições de teste para o campo \"idade\" de um formulário. 2. Aplique particionamento de equivalência e identifique valores limite. _Referência: baseado no Syllabus ISTQB CTFL 4.0 — use o syllabus como fonte ao preencher o conteúdo._ <TipBox title=\"Sugestão de uso do template\" Copie este arquivo para um novo MDX do capítulo e substitua os blocos pelo conteúdo real. Use a tabela \"Resumo Rápido\" para notas rápidas e o <code ExampleBox</code para exemplos práticos. </TipBox"
+    "title": "sonarqube",
+    "url": "/docs/qualidade-de-codigo/sonarqube",
+    "text": "SonarQube O que é? Plataforma de análise contínua de qualidade e segurança de código. Para que serve? Centraliza resultados de análise estática, cobertura e quality gates. Como usar? Integre o scanner ao pipeline e ajuste o perfil de regras às linguagens e políticas do projeto. Exemplo Uma pull request recebe análise de código novo e só pode ser integrada após atender ao gate definido. Pontos de atenção Cobertura é um indicador, não uma garantia de qualidade. Conceitos relacionados Referências Documentação oficial do SonarQube"
   },
   {
-    "title": "Template de Conceito (Teste Estático)",
-    "url": "/docs/teste-estatico/00-template",
-    "text": "import TipBox from '@site/src/components/TipBox'; import ExampleBox from '@site/src/components/ExampleBox'; TEMPLATE DE CONCEITO _Substitua pelo conteúdo real._ Resumo Rápido | Item | Resumo | | | | | Objetivo | | | Quando aplicar | | | Risco | | <TipBox Copie e cole este template para novos tópicos.</TipBox"
+    "title": "static-analysis",
+    "url": "/docs/qualidade-de-codigo/static-analysis",
+    "text": "Análise estática O que é? Avaliação automatizada do código sem executar o sistema. Para que serve? Detecta padrões de erro, vulnerabilidades, duplicação e problemas de estilo. Como usar? Execute analisadores no editor e no pipeline, com regras adequadas ao projeto. Exemplo O pipeline sinaliza uma variável não utilizada e uma possível injeção de comando. Pontos de atenção Regras devem ter propósito; alertas ignorados em massa reduzem valor. Conceitos relacionados Referências Documentação da ferramenta adotada"
   },
   {
-    "title": "Teste Estático",
-    "url": "/docs/teste-estatico/intro",
-    "text": "Placeholder para a seção de Teste Estático."
+    "title": "analise-de-valor-limite",
+    "url": "/docs/tecnicas-de-teste/analise-de-valor-limite",
+    "text": "Análise de valor limite O que é? Técnica que concentra testes nos limites de uma faixa ou transição de valores. Para que serve? Encontra defeitos frequentes em comparações, intervalos e validações. Quando usar? Em regras com mínimo, máximo, datas, quantidades ou tamanhos. Como usar? Teste o limite e valores imediatamente abaixo e acima dele, conforme o risco. Exemplo Para um campo de 1 a 100 caracteres, teste 0, 1, 100 e 101. Pontos de atenção Confirme se os limites são inclusivos ou exclusivos. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "congratulations",
-    "url": "/docs/tutorial-basics/congratulations",
-    "text": "Congratulations! You have just learned the basics of Docusaurus and made some changes to the initial template . Docusaurus has much more to offer ! Have 5 more minutes ? Take a look at and . Anything unclear or buggy in this tutorial? What's next? Read the Modify your site configuration with Add navbar and footer items with Add a custom Add a Find inspirations in the Get involved in the"
+    "title": "introducao",
+    "url": "/docs/tecnicas-de-teste/introducao",
+    "text": "Técnicas de teste O que é? Técnicas são formas estruturadas de derivar casos de teste a partir de requisitos, regras ou comportamento. Como usar? Escolha a técnica que melhor representa o risco e o tipo de regra a validar. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "Greetings!",
-    "url": "/docs/tutorial-basics/create-a-blog-post",
-    "text": "Create a Blog Post Docusaurus creates a page for each blog post , but also a blog index page , a tag system , an RSS feed... Create your first Post Create a file at : A new blog post is now available at ."
+    "title": "particionamento-de-equivalencia",
+    "url": "/docs/tecnicas-de-teste/particionamento-de-equivalencia",
+    "text": "Particionamento de equivalência O que é? Técnica que agrupa valores com comportamento esperado semelhante em classes de equivalência. Para que serve? Reduz a quantidade de testes mantendo cobertura representativa. Quando usar? Quando entradas aceitam faixas, listas ou categorias de valores. Como usar? Identifique classes válidas e inválidas e selecione ao menos um representante de cada uma. Exemplo Para idade entre 18 e 65, classes possíveis são: menor que 18, de 18 a 65 e maior que 65. Pontos de atenção Combine com quando as bordas forem relevantes. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "create-a-document",
-    "url": "/docs/tutorial-basics/create-a-document",
-    "text": "Create a Document Documents are groups of pages connected through: a sidebar previous/next navigation versioning Create your first Doc Create a Markdown file at : A new document is now available at . Configure the Sidebar Docusaurus automatically creates a sidebar from the folder. Add metadata to customize the sidebar label and position: It is also possible to create your sidebar explicitly in :"
+    "title": "tabela-de-decisao",
+    "url": "/docs/tecnicas-de-teste/tabela-de-decisao",
+    "text": "Tabela de decisão O que é? Representação tabular de combinações de condições e ações esperadas. Para que serve? Torna regras de negócio complexas mais claras e testáveis. Como usar? Liste condições, resultados possíveis e regras que combinam essas condições. Exemplo Desconto pode variar conforme tipo de cliente e valor mínimo do pedido. Pontos de atenção Elimine combinações impossíveis antes de criar os casos. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "create-a-page",
-    "url": "/docs/tutorial-basics/create-a-page",
-    "text": "Create a Page Add Markdown or React files to to create a standalone page : → → → Create your first React Page Create a file at : A new page is now available at . Create your first Markdown Page Create a file at : A new page is now available at ."
+    "title": "teste-de-caso-de-uso",
+    "url": "/docs/tecnicas-de-teste/teste-de-caso-de-uso",
+    "text": "Teste de caso de uso O que é? Técnica que deriva testes a partir dos fluxos entre atores e o sistema. Para que serve? Valida jornadas de negócio, incluindo caminhos alternativos e exceções. Como usar? Mapeie o fluxo principal, alternativas e pré condições; transforme cada caminho relevante em casos de teste. Exemplo No cadastro, testar o fluxo principal e a alternativa em que o e mail já existe. Pontos de atenção Não substitui testes de regras detalhadas ou limites. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "deploy-your-site",
-    "url": "/docs/tutorial-basics/deploy-your-site",
-    "text": "Deploy your site Docusaurus is a static site generator (also called ). It builds your site as simple static HTML, JavaScript and CSS files . Build your site Build your site for production : The static files are generated in the folder. Deploy your site Test your production build locally: The folder is now served at . You can now deploy the folder almost anywhere easily, for free or very small cost (read the )."
+    "title": "teste-de-transicao-de-estado",
+    "url": "/docs/tecnicas-de-teste/teste-de-transicao-de-estado",
+    "text": "Teste de transição de estado O que é? Técnica para validar estados de um sistema e as transições provocadas por eventos. Para que serve? Identifica regras incorretas em fluxos com status ou histórico. Como usar? Modele estados, eventos permitidos e resultados esperados; derive casos para transições válidas e inválidas. Exemplo Um pedido pago pode ser enviado, mas não pode voltar diretamente para aguardando pagamento. Pontos de atenção Considere transições não permitidas e repetidas. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "My document title",
-    "url": "/docs/tutorial-basics/markdown-features",
-    "text": "Markdown Features Docusaurus supports and a few additional features . Front Matter Markdown documents have metadata at the top called : Headings {/ my heading id /} Markdown headings are supported using the standard “ ” syntax and are automatically added to the table of contents. The number of corresponds to the heading level. Heading Ids {/ my custom id /} Add after the heading text to assign it an explicit anchor id, used for linking. Links Regular Markdown links are supported, using url paths or relative file paths. Result: Let's see how to . Images Regular Markdown images are supported. You can use absolute paths to reference images in the static directory ( ): You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them: Code Blocks Markdown code blocks are supported with Syntax highlighting. jsx title=\"src/components/HelloDocusaurus.js\" function HelloDocusaurus() { return <h1 Hello, Docusaurus!</h1 ; } You clicked the color ${color} with label ${children}`); }} {children} </span ); This is <Highlight color=\" 25c2a0\" Docusaurus green</Highlight ! This is <Highlight color=\" 1877F2\" Facebook blue</Highlight !"
+    "title": "introducao",
+    "url": "/docs/tipos-de-teste/introducao",
+    "text": "Tipos de teste O que é? Classificações de testes conforme o objetivo de qualidade avaliado. Como usar? Selecione tipos de teste de acordo com riscos, requisitos e mudanças realizadas. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "manage-docs-versions",
-    "url": "/docs/tutorial-extras/manage-docs-versions",
-    "text": "Manage Docs Versions Docusaurus can manage multiple versions of your docs. Create a docs version Release a version 1.0 of your project: The folder is copied into and is created. Your docs now have 2 versions: at for the version 1.0 docs at for the upcoming, unreleased docs Add a Version Dropdown To navigate seamlessly across versions, add a version dropdown. Modify the file: The docs version dropdown appears in your navbar: Update an existing version It is possible to edit versioned docs in their respective folder: updates updates"
+    "title": "teste-de-confirmacao",
+    "url": "/docs/tipos-de-teste/teste-de-confirmacao",
+    "text": "Teste de confirmação O que é? Teste que verifica se um defeito específico foi corrigido. Para que serve? Confirma que a solução atende ao comportamento esperado descrito no registro do problema. Como usar? Reproduza o cenário reportado com a versão que contém a correção e registre a evidência. Exemplo Após corrigir um erro no login, executar novamente as credenciais que antes causavam a falha. Pontos de atenção A confirmação não substitui a regressão de áreas afetadas. Conceitos relacionados Referências ISTQB CTFL"
   },
   {
-    "title": "translate-your-site",
-    "url": "/docs/tutorial-extras/translate-your-site",
-    "text": "Translate your site Let's translate to French. Configure i18n Modify to add support for the locale: Translate a doc Copy the file to the folder: Translate in French. Start your localized site Start your site on the French locale: Your localized site is accessible at and the page is translated. :::caution In development, you can only use one locale at a time. ::: Add a Locale Dropdown To navigate seamlessly across languages, add a locale dropdown. Modify the file: The locale dropdown now appears in your navbar: Build your localized site Build your site for a specific locale: Or build your site to include all the locales at once:"
+    "title": "teste-de-regressao",
+    "url": "/docs/tipos-de-teste/teste-de-regressao",
+    "text": "Teste de regressão O que é? Teste executado para identificar efeitos indesejados de mudanças no software ou ambiente. Para que serve? Protege funcionalidades que já funcionavam contra impactos de uma alteração. Quando usar? Após correções, novas funcionalidades, atualizações de dependências ou mudanças de configuração. Como usar? Selecione testes pela análise de impacto e automatize os cenários estáveis e recorrentes. Exemplo Após mudar o cálculo do frete, reexecutar testes de checkout, cupons e total do pedido. Pontos de atenção A suíte deve evoluir para evitar lentidão e redundância. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "teste-exploratorio",
+    "url": "/docs/tipos-de-teste/teste-exploratorio",
+    "text": "Teste exploratório O que é? Abordagem em que aprendizado, desenho e execução de testes ocorrem de forma integrada. Para que serve? Explora riscos, comportamentos inesperados e áreas pouco documentadas. Quando usar? Em investigações, novas funcionalidades ou quando há pouco tempo e informação inicial. Como usar? Defina uma missão, limite o tempo da sessão, registre observações e reporte riscos encontrados. Exemplo Explorar por 45 minutos os fluxos de cancelamento de assinatura, variando permissões e estados. Pontos de atenção Registre o que foi explorado para tornar o resultado comunicável. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "teste-funcional",
+    "url": "/docs/tipos-de-teste/teste-funcional",
+    "text": "Teste funcional O que é? Teste que avalia se funções e regras de negócio entregam o comportamento esperado. Para que serve? Verifica requisitos funcionais sob a perspectiva de quem usa ou integra com o sistema. Como usar? Derive casos a partir de requisitos, critérios de aceite e regras de negócio. Exemplo Verificar se um cupom válido aplica o desconto correto ao carrinho. Pontos de atenção Também valide cenários negativos e permissões. Conceitos relacionados Referências ISTQB CTFL"
+  },
+  {
+    "title": "teste-nao-funcional",
+    "url": "/docs/tipos-de-teste/teste-nao-funcional",
+    "text": "Teste não funcional O que é? Teste de características de qualidade, como desempenho, segurança, usabilidade e confiabilidade. Para que serve? Avalia se o sistema é adequado para uso além de apenas funcionar corretamente. Como usar? Transforme atributos de qualidade em critérios mensuráveis e execute testes no ambiente adequado. Exemplo Validar se uma busca responde em até dois segundos sob a carga esperada. Pontos de atenção Critérios vagos, como “ser rápido”, não são testáveis. Conceitos relacionados Referências ISTQB CTFL"
   }
 ]

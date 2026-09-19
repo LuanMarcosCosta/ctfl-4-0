@@ -1,5 +1,0 @@
-/* Component-specific lightweight styles */
-.tipbox { border-left: 4px solid var(--ifm-color-primary); padding: 0.5rem 1rem; background: var(--ifm-color-emphasis-0); }
-.examplebox { border: 1px dashed var(--ifm-color-border); padding: 12px; border-radius: 6px; }
-.warningbox { border-left: 4px solid var(--ifm-color-danger); padding: 0.5rem 1rem; background: var(--ifm-color-emphasis-0); }
-.questioncard { border: 1px solid var(--ifm-color-border); padding: 12px; border-radius: 6px; }
