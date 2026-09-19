@@ -2,19 +2,19 @@
 slug: /
 ---
 
-# Wiki QA
+# Software Quality Knowledge Base
 
 ## Objetivo
 
-Esta wiki reúne a base de conhecimento e a documentação do time de Quality Assurance (QA), servindo como referência central para processos, práticas e artigos técnicos relacionados à garantia de qualidade.
+Base de conhecimento prática sobre qualidade de software, testes, automação e práticas de engenharia. A estrutura usa a ISTQB CTFL como referência conceitual, sem se limitar a ela.
 
 ## Conteúdo
 
-Aqui serão publicados artigos escritos pelos membros do time de QA. Qualquer conteúdo que ajude no dia a dia do time — estratégias de teste, automação, processos de qualidade, ferramentas e boas práticas — pode ser disponibilizado nesta wiki.
+Os artigos apoiam a consulta rápida no dia a dia: fundamentos, técnicas, gestão, automação, APIs, qualidade de código e CI/CD.
 
 ## Como navegar
 
-Utilize o menu lateral para explorar as categorias disponíveis. Para conhecer melhor esta wiki, comece pela categoria **Introdução**, que contém a visão geral do projeto e o guia de como contribuir.
+Utilize o menu lateral para explorar as categorias. Para iniciar, consulte **Fundamentos** ou leia a **Visão geral** do projeto.
 
 ## Keywords
 
