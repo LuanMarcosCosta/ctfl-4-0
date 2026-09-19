@@ -1,0 +1,9 @@
+{
+  "label": "Introdução",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/introducao",
+    "description": "Conceitos iniciais e orientações para quem está começando a usar ou contribuir com a Wiki QA."
+  }
+}
